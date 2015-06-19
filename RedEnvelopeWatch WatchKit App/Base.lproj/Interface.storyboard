@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--主選單-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainMenuInterfaceController" title="主選單" id="AgC-eL-Hgc" customClass="MainMenuInterfaceController" customModule="RedEnvelopeWatch_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="242" alignment="left" layout="vertical" id="IQV-oe-LBD">
+                            <items>
+                                <label alignment="left" text="友誼程度" numberOfLines="0" id="So7-Cx-Vki"/>
+                                <button width="1" alignment="left" title="請選擇" id="Idl-n7-b0Y">
+                                    <connections>
+                                        <action selector="selectFriendShipLevel" destination="AgC-eL-Hgc" id="uQ9-H5-p5u"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" text="飯店等級" numberOfLines="0" id="VfW-Fn-kzK"/>
+                                <button width="1" alignment="left" title="請選擇" id="s5f-d5-Nwh">
+                                    <connections>
+                                        <action selector="selectHotelLavel" destination="AgC-eL-Hgc" id="125-QU-El7"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="計算" id="UF3-ds-MrJ">
+                                    <connections>
+                                        <action selector="getResult" destination="AgC-eL-Hgc" id="eY6-PQ-bnc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="friend" destination="So7-Cx-Vki" id="9dv-ih-8pp"/>
+                        <outlet property="hotel" destination="VfW-Fn-kzK" id="Nx9-FN-VWe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="148" y="165.5"/>
+        </scene>
+        <!--選擇項目-->
+        <scene sceneID="C8q-26-P5R">
+            <objects>
+                <controller identifier="SubMenuInterfaceController" title="選擇項目" id="2k9-gi-HtD" customClass="SubMenuInterfaceController" customModule="RedEnvelopeWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="jCJ-2a-bM9">
+                            <items>
+                                <tableRow identifier="tableRow" id="INE-3u-Jzw" customClass="tableRow" customModule="RedEnvelopeWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="51.5" alignment="left" id="sm4-ip-Gqr">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="UOT-h1-bhi"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="UOT-h1-bhi" id="YSm-ZU-m1f"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="jCJ-2a-bM9" id="3hF-IZ-mwJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="481" y="138"/>
+        </scene>
+        <!--ResultInterfaceController-->
+        <scene sceneID="KHK-9p-78o">
+            <objects>
+                <controller identifier="ResultInterfaceController" id="Sb5-UF-Ff3" customClass="ResultInterfaceController" customModule="RedEnvelopeWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="wXl-OY-dDn"/>
+                        <label alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="Ljj-Gr-PIt">
+                            <fontDescription key="font" type="boldSystem" pointSize="23"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="mindLabel" destination="wXl-OY-dDn" id="RUU-cY-H6j"/>
+                        <outlet property="priceLabel" destination="Ljj-Gr-PIt" id="t6n-aG-qPi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="481" y="413"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="RedEnvelopeWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

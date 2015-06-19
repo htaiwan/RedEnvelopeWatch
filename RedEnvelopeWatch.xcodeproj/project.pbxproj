@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDBD2C961B26EDB400C0E7BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2C951B26EDB400C0E7BC /* AppDelegate.swift */; };
+		DDBD2C981B26EDB400C0E7BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2C971B26EDB400C0E7BC /* ViewController.swift */; };
+		DDBD2C9B1B26EDB400C0E7BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2C991B26EDB400C0E7BC /* Main.storyboard */; };
+		DDBD2C9D1B26EDB400C0E7BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2C9C1B26EDB400C0E7BC /* Images.xcassets */; };
+		DDBD2CA01B26EDB400C0E7BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2C9E1B26EDB400C0E7BC /* LaunchScreen.xib */; };
+		DDBD2CAC1B26EDB400C0E7BC /* RedEnvelopeWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2CAB1B26EDB400C0E7BC /* RedEnvelopeWatchTests.swift */; };
+		DDBD2CC11B26EDF600C0E7BC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2CC01B26EDF600C0E7BC /* NotificationController.swift */; };
+		DDBD2CC31B26EDF600C0E7BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2CC21B26EDF600C0E7BC /* Images.xcassets */; };
+		DDBD2CC71B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2CC61B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App.app */; };
+		DDBD2CCF1B26EDF600C0E7BC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2CCD1B26EDF600C0E7BC /* Interface.storyboard */; };
+		DDBD2CD11B26EDF600C0E7BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2CD01B26EDF600C0E7BC /* Images.xcassets */; };
+		DDBD2CD41B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DDBD2CB91B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DDBD2CDD1B2705DB00C0E7BC /* MainMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2CDC1B2705DB00C0E7BC /* MainMenuInterfaceController.swift */; };
+		DDBD2CDF1B2705EF00C0E7BC /* SubMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2CDE1B2705EF00C0E7BC /* SubMenuInterfaceController.swift */; };
+		DDBD2CE11B2705FB00C0E7BC /* ResultInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2CE01B2705FB00C0E7BC /* ResultInterfaceController.swift */; };
+		DDBD2CE51B2707F500C0E7BC /* tableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2CE41B2707F500C0E7BC /* tableRow.swift */; };
+		DDBD2CE91B27135700C0E7BC /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBD2CE81B27135700C0E7BC /* Context.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDBD2CA61B26EDB400C0E7BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDBD2C881B26EDB400C0E7BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBD2C8F1B26EDB400C0E7BC;
+			remoteInfo = RedEnvelopeWatch;
+		};
+		DDBD2CC81B26EDF600C0E7BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDBD2C881B26EDB400C0E7BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBD2CC51B26EDF600C0E7BC;
+			remoteInfo = "RedEnvelopeWatch WatchKit App";
+		};
+		DDBD2CD21B26EDF600C0E7BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDBD2C881B26EDB400C0E7BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBD2CB81B26EDF600C0E7BC;
+			remoteInfo = "RedEnvelopeWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDBD2CDB1B26EDF600C0E7BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DDBD2CD41B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DDBD2C901B26EDB400C0E7BC /* RedEnvelopeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedEnvelopeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBD2C941B26EDB400C0E7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBD2C951B26EDB400C0E7BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDBD2C971B26EDB400C0E7BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDBD2C9A1B26EDB400C0E7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDBD2C9C1B26EDB400C0E7BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDBD2C9F1B26EDB400C0E7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DDBD2CA51B26EDB400C0E7BC /* RedEnvelopeWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedEnvelopeWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBD2CAA1B26EDB400C0E7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBD2CAB1B26EDB400C0E7BC /* RedEnvelopeWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedEnvelopeWatchTests.swift; sourceTree = "<group>"; };
+		DDBD2CB91B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RedEnvelopeWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBD2CBC1B26EDF600C0E7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBD2CBD1B26EDF600C0E7BC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DDBD2CC01B26EDF600C0E7BC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DDBD2CC21B26EDF600C0E7BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDBD2CC61B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RedEnvelopeWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBD2CCC1B26EDF600C0E7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBD2CCE1B26EDF600C0E7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DDBD2CD01B26EDF600C0E7BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDBD2CDC1B2705DB00C0E7BC /* MainMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuInterfaceController.swift; sourceTree = "<group>"; };
+		DDBD2CDE1B2705EF00C0E7BC /* SubMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuInterfaceController.swift; sourceTree = "<group>"; };
+		DDBD2CE01B2705FB00C0E7BC /* ResultInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultInterfaceController.swift; sourceTree = "<group>"; };
+		DDBD2CE41B2707F500C0E7BC /* tableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableRow.swift; sourceTree = "<group>"; };
+		DDBD2CE81B27135700C0E7BC /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDBD2C8D1B26EDB400C0E7BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBD2CA21B26EDB400C0E7BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBD2CB61B26EDF600C0E7BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDBD2C871B26EDB400C0E7BC = {
+			isa = PBXGroup;
+			children = (
+				DDBD2C921B26EDB400C0E7BC /* RedEnvelopeWatch */,
+				DDBD2CA81B26EDB400C0E7BC /* RedEnvelopeWatchTests */,
+				DDBD2CBA1B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension */,
+				DDBD2CCA1B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App */,
+				DDBD2C911B26EDB400C0E7BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDBD2C911B26EDB400C0E7BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2C901B26EDB400C0E7BC /* RedEnvelopeWatch.app */,
+				DDBD2CA51B26EDB400C0E7BC /* RedEnvelopeWatchTests.xctest */,
+				DDBD2CB91B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension.appex */,
+				DDBD2CC61B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDBD2C921B26EDB400C0E7BC /* RedEnvelopeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2C951B26EDB400C0E7BC /* AppDelegate.swift */,
+				DDBD2C971B26EDB400C0E7BC /* ViewController.swift */,
+				DDBD2C991B26EDB400C0E7BC /* Main.storyboard */,
+				DDBD2C9C1B26EDB400C0E7BC /* Images.xcassets */,
+				DDBD2C9E1B26EDB400C0E7BC /* LaunchScreen.xib */,
+				DDBD2C931B26EDB400C0E7BC /* Supporting Files */,
+			);
+			path = RedEnvelopeWatch;
+			sourceTree = "<group>";
+		};
+		DDBD2C931B26EDB400C0E7BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2C941B26EDB400C0E7BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDBD2CA81B26EDB400C0E7BC /* RedEnvelopeWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2CAB1B26EDB400C0E7BC /* RedEnvelopeWatchTests.swift */,
+				DDBD2CA91B26EDB400C0E7BC /* Supporting Files */,
+			);
+			path = RedEnvelopeWatchTests;
+			sourceTree = "<group>";
+		};
+		DDBD2CA91B26EDB400C0E7BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2CAA1B26EDB400C0E7BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDBD2CBA1B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2CDC1B2705DB00C0E7BC /* MainMenuInterfaceController.swift */,
+				DDBD2CDE1B2705EF00C0E7BC /* SubMenuInterfaceController.swift */,
+				DDBD2CE01B2705FB00C0E7BC /* ResultInterfaceController.swift */,
+				DDBD2CE41B2707F500C0E7BC /* tableRow.swift */,
+				DDBD2CE81B27135700C0E7BC /* Context.swift */,
+				DDBD2CC01B26EDF600C0E7BC /* NotificationController.swift */,
+				DDBD2CC21B26EDF600C0E7BC /* Images.xcassets */,
+				DDBD2CBB1B26EDF600C0E7BC /* Supporting Files */,
+			);
+			path = "RedEnvelopeWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DDBD2CBB1B26EDF600C0E7BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2CBC1B26EDF600C0E7BC /* Info.plist */,
+				DDBD2CBD1B26EDF600C0E7BC /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDBD2CCA1B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2CCD1B26EDF600C0E7BC /* Interface.storyboard */,
+				DDBD2CD01B26EDF600C0E7BC /* Images.xcassets */,
+				DDBD2CCB1B26EDF600C0E7BC /* Supporting Files */,
+			);
+			path = "RedEnvelopeWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		DDBD2CCB1B26EDF600C0E7BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD2CCC1B26EDF600C0E7BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDBD2C8F1B26EDB400C0E7BC /* RedEnvelopeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBD2CAF1B26EDB400C0E7BC /* Build configuration list for PBXNativeTarget "RedEnvelopeWatch" */;
+			buildPhases = (
+				DDBD2C8C1B26EDB400C0E7BC /* Sources */,
+				DDBD2C8D1B26EDB400C0E7BC /* Frameworks */,
+				DDBD2C8E1B26EDB400C0E7BC /* Resources */,
+				DDBD2CDB1B26EDF600C0E7BC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDBD2CD31B26EDF600C0E7BC /* PBXTargetDependency */,
+			);
+			name = RedEnvelopeWatch;
+			productName = RedEnvelopeWatch;
+			productReference = DDBD2C901B26EDB400C0E7BC /* RedEnvelopeWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDBD2CA41B26EDB400C0E7BC /* RedEnvelopeWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBD2CB21B26EDB400C0E7BC /* Build configuration list for PBXNativeTarget "RedEnvelopeWatchTests" */;
+			buildPhases = (
+				DDBD2CA11B26EDB400C0E7BC /* Sources */,
+				DDBD2CA21B26EDB400C0E7BC /* Frameworks */,
+				DDBD2CA31B26EDB400C0E7BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDBD2CA71B26EDB400C0E7BC /* PBXTargetDependency */,
+			);
+			name = RedEnvelopeWatchTests;
+			productName = RedEnvelopeWatchTests;
+			productReference = DDBD2CA51B26EDB400C0E7BC /* RedEnvelopeWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDBD2CB81B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBD2CD81B26EDF600C0E7BC /* Build configuration list for PBXNativeTarget "RedEnvelopeWatch WatchKit Extension" */;
+			buildPhases = (
+				DDBD2CB51B26EDF600C0E7BC /* Sources */,
+				DDBD2CB61B26EDF600C0E7BC /* Frameworks */,
+				DDBD2CB71B26EDF600C0E7BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDBD2CC91B26EDF600C0E7BC /* PBXTargetDependency */,
+			);
+			name = "RedEnvelopeWatch WatchKit Extension";
+			productName = "RedEnvelopeWatch WatchKit Extension";
+			productReference = DDBD2CB91B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		DDBD2CC51B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBD2CD51B26EDF600C0E7BC /* Build configuration list for PBXNativeTarget "RedEnvelopeWatch WatchKit App" */;
+			buildPhases = (
+				DDBD2CC41B26EDF600C0E7BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RedEnvelopeWatch WatchKit App";
+			productName = "RedEnvelopeWatch WatchKit App";
+			productReference = DDBD2CC61B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDBD2C881B26EDB400C0E7BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = htaiwan;
+				TargetAttributes = {
+					DDBD2C8F1B26EDB400C0E7BC = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					DDBD2CA41B26EDB400C0E7BC = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = DDBD2C8F1B26EDB400C0E7BC;
+					};
+					DDBD2CB81B26EDF600C0E7BC = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					DDBD2CC51B26EDF600C0E7BC = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = DDBD2C8B1B26EDB400C0E7BC /* Build configuration list for PBXProject "RedEnvelopeWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDBD2C871B26EDB400C0E7BC;
+			productRefGroup = DDBD2C911B26EDB400C0E7BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDBD2C8F1B26EDB400C0E7BC /* RedEnvelopeWatch */,
+				DDBD2CA41B26EDB400C0E7BC /* RedEnvelopeWatchTests */,
+				DDBD2CB81B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension */,
+				DDBD2CC51B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDBD2C8E1B26EDB400C0E7BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBD2C9B1B26EDB400C0E7BC /* Main.storyboard in Resources */,
+				DDBD2CA01B26EDB400C0E7BC /* LaunchScreen.xib in Resources */,
+				DDBD2C9D1B26EDB400C0E7BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBD2CA31B26EDB400C0E7BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBD2CB71B26EDF600C0E7BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBD2CC71B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App.app in Resources */,
+				DDBD2CC31B26EDF600C0E7BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBD2CC41B26EDF600C0E7BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBD2CCF1B26EDF600C0E7BC /* Interface.storyboard in Resources */,
+				DDBD2CD11B26EDF600C0E7BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDBD2C8C1B26EDB400C0E7BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBD2C981B26EDB400C0E7BC /* ViewController.swift in Sources */,
+				DDBD2C961B26EDB400C0E7BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBD2CA11B26EDB400C0E7BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBD2CAC1B26EDB400C0E7BC /* RedEnvelopeWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBD2CB51B26EDF600C0E7BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBD2CC11B26EDF600C0E7BC /* NotificationController.swift in Sources */,
+				DDBD2CE11B2705FB00C0E7BC /* ResultInterfaceController.swift in Sources */,
+				DDBD2CE51B2707F500C0E7BC /* tableRow.swift in Sources */,
+				DDBD2CE91B27135700C0E7BC /* Context.swift in Sources */,
+				DDBD2CDD1B2705DB00C0E7BC /* MainMenuInterfaceController.swift in Sources */,
+				DDBD2CDF1B2705EF00C0E7BC /* SubMenuInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDBD2CA71B26EDB400C0E7BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDBD2C8F1B26EDB400C0E7BC /* RedEnvelopeWatch */;
+			targetProxy = DDBD2CA61B26EDB400C0E7BC /* PBXContainerItemProxy */;
+		};
+		DDBD2CC91B26EDF600C0E7BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDBD2CC51B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit App */;
+			targetProxy = DDBD2CC81B26EDF600C0E7BC /* PBXContainerItemProxy */;
+		};
+		DDBD2CD31B26EDF600C0E7BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDBD2CB81B26EDF600C0E7BC /* RedEnvelopeWatch WatchKit Extension */;
+			targetProxy = DDBD2CD21B26EDF600C0E7BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDBD2C991B26EDB400C0E7BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBD2C9A1B26EDB400C0E7BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDBD2C9E1B26EDB400C0E7BC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBD2C9F1B26EDB400C0E7BC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		DDBD2CCD1B26EDF600C0E7BC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBD2CCE1B26EDF600C0E7BC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDBD2CAD1B26EDB400C0E7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDBD2CAE1B26EDB400C0E7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDBD2CB01B26EDB400C0E7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RedEnvelopeWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDBD2CB11B26EDB400C0E7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RedEnvelopeWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DDBD2CB31B26EDB400C0E7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RedEnvelopeWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedEnvelopeWatch.app/RedEnvelopeWatch";
+			};
+			name = Debug;
+		};
+		DDBD2CB41B26EDB400C0E7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RedEnvelopeWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedEnvelopeWatch.app/RedEnvelopeWatch";
+			};
+			name = Release;
+		};
+		DDBD2CD61B26EDF600C0E7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RedEnvelopeWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "RedEnvelopeWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		DDBD2CD71B26EDF600C0E7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = RedEnvelopeWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "RedEnvelopeWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		DDBD2CD91B26EDF600C0E7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RedEnvelopeWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DDBD2CDA1B26EDF600C0E7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RedEnvelopeWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDBD2C8B1B26EDB400C0E7BC /* Build configuration list for PBXProject "RedEnvelopeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBD2CAD1B26EDB400C0E7BC /* Debug */,
+				DDBD2CAE1B26EDB400C0E7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBD2CAF1B26EDB400C0E7BC /* Build configuration list for PBXNativeTarget "RedEnvelopeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBD2CB01B26EDB400C0E7BC /* Debug */,
+				DDBD2CB11B26EDB400C0E7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDBD2CB21B26EDB400C0E7BC /* Build configuration list for PBXNativeTarget "RedEnvelopeWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBD2CB31B26EDB400C0E7BC /* Debug */,
+				DDBD2CB41B26EDB400C0E7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDBD2CD51B26EDF600C0E7BC /* Build configuration list for PBXNativeTarget "RedEnvelopeWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBD2CD61B26EDF600C0E7BC /* Debug */,
+				DDBD2CD71B26EDF600C0E7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDBD2CD81B26EDF600C0E7BC /* Build configuration list for PBXNativeTarget "RedEnvelopeWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBD2CD91B26EDF600C0E7BC /* Debug */,
+				DDBD2CDA1B26EDF600C0E7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDBD2C881B26EDB400C0E7BC /* Project object */;
+}
